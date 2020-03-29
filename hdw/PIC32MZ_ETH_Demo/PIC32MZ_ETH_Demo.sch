@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PIC32MZ_ETH_Demo-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500

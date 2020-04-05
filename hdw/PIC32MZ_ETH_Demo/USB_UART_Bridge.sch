@@ -92,7 +92,7 @@ F 3 "" H 6175 3820 50  0001 C CNN
 F 4 "0402" H 6000 3820 50  0000 R CNN "display_footprint"
 F 5 "50V" H 6000 3720 50  0000 R CNN "Voltage"
 F 6 "NP0" H 6000 3620 50  0000 R CNN "Dielectric"
-F 7 "" H 6575 4220 60  0001 C CNN "Digi-Key PN"
+F 7 "399-17558-1-ND" H 6575 4220 60  0001 C CNN "Digi-Key PN"
 	1    6150 3720
 	1    0    0    -1  
 $EndComp
@@ -107,7 +107,7 @@ F 3 "" H 3995 4940 50  0001 C CNN
 F 4 "0402" H 3820 4940 50  0000 R CNN "display_footprint"
 F 5 "50V" H 3820 4840 50  0000 R CNN "Voltage"
 F 6 "X7R" H 3820 4740 50  0000 R CNN "Dielectric"
-F 7 "" H 4395 5340 60  0001 C CNN "Digi-Key PN"
+F 7 "490-10701-1-ND" H 4395 5340 60  0001 C CNN "Digi-Key PN"
 	1    3970 4840
 	1    0    0    -1  
 $EndComp
@@ -210,7 +210,7 @@ F 3 "" H 1535 3930 50  0001 C CNN
 F 4 "0402" H 1360 3930 50  0000 R CNN "display_footprint"
 F 5 "50V" H 1360 3830 50  0000 R CNN "Voltage"
 F 6 "X7R" H 1360 3730 50  0000 R CNN "Dielectric"
-F 7 "" H 1935 4330 60  0001 C CNN "Digi-Key PN"
+F 7 "490-10701-1-ND" H 1935 4330 60  0001 C CNN "Digi-Key PN"
 	1    1510 3830
 	1    0    0    -1  
 $EndComp
@@ -225,7 +225,7 @@ F 3 "" H 1510 3400 50  0001 C CNN
 F 4 "0402" H 1610 3490 50  0000 L CNN "display_footprint"
 F 5 "1%" H 1610 3400 50  0000 L CNN "Tolerance"
 F 6 "1/16W" H 1620 3320 50  0000 L CNN "Wattage"
-F 7 "" H 1810 3800 60  0001 C CNN "Digi-Key PN"
+F 7 "RMCF0402FT10K0CT-ND" H 1810 3800 60  0001 C CNN "Digi-Key PN"
 	1    1510 3400
 	1    0    0    -1  
 $EndComp
@@ -262,7 +262,7 @@ F 3 "" H 7005 3820 50  0001 C CNN
 F 4 "0402" H 6830 3820 50  0000 R CNN "display_footprint"
 F 5 "50V" H 6830 3720 50  0000 R CNN "Voltage"
 F 6 "NP0" H 6830 3620 50  0000 R CNN "Dielectric"
-F 7 "" H 7405 4220 60  0001 C CNN "Digi-Key PN"
+F 7 "399-17558-1-ND" H 7405 4220 60  0001 C CNN "Digi-Key PN"
 	1    6980 3720
 	1    0    0    -1  
 $EndComp
@@ -288,7 +288,7 @@ F 3 "" H 3305 4940 50  0001 C CNN
 F 4 "0402" H 3130 4940 50  0000 R CNN "display_footprint"
 F 5 "50V" H 3130 4840 50  0000 R CNN "Voltage"
 F 6 "X7R" H 3130 4740 50  0000 R CNN "Dielectric"
-F 7 "" H 3705 5340 60  0001 C CNN "Digi-Key PN"
+F 7 "490-10701-1-ND" H 3705 5340 60  0001 C CNN "Digi-Key PN"
 	1    3280 4840
 	1    0    0    -1  
 $EndComp
@@ -314,7 +314,7 @@ F 3 "" H 4905 4040 50  0001 C CNN
 F 4 "0402" H 4730 4040 50  0000 R CNN "display_footprint"
 F 5 "50V" H 4730 3940 50  0000 R CNN "Voltage"
 F 6 "X7R" H 4730 3840 50  0000 R CNN "Dielectric"
-F 7 "" H 5305 4440 60  0001 C CNN "Digi-Key PN"
+F 7 "490-10701-1-ND" H 5305 4440 60  0001 C CNN "Digi-Key PN"
 	1    4880 3940
 	1    0    0    -1  
 $EndComp
@@ -362,7 +362,7 @@ F 3 "" H 7925 2550 50  0001 C CNN
 F 4 "0402" H 7750 2550 50  0000 R CNN "display_footprint"
 F 5 "50V" H 7750 2450 50  0000 R CNN "Voltage"
 F 6 "X7R" H 7750 2350 50  0000 R CNN "Dielectric"
-F 7 "" H 8325 2950 60  0001 C CNN "Digi-Key PN"
+F 7 "490-10701-1-ND" H 8325 2950 60  0001 C CNN "Digi-Key PN"
 	1    7900 2450
 	1    0    0    -1  
 $EndComp
@@ -388,7 +388,7 @@ F 3 "" H 4855 2520 50  0001 C CNN
 F 4 "0402" H 4680 2520 50  0000 R CNN "display_footprint"
 F 5 "50V" H 4680 2420 50  0000 R CNN "Voltage"
 F 6 "X7R" H 4680 2320 50  0000 R CNN "Dielectric"
-F 7 "" H 5255 2920 60  0001 C CNN "Digi-Key PN"
+F 7 "490-10701-1-ND" H 5255 2920 60  0001 C CNN "Digi-Key PN"
 	1    4830 2420
 	1    0    0    -1  
 $EndComp
@@ -427,7 +427,7 @@ F 3 "" H 6640 4820 50  0001 C CNN
 F 4 "0402" H 6710 4900 50  0000 L CNN "display_footprint"
 F 5 "1%" H 6710 4820 50  0000 L CNN "Tolerance"
 F 6 "1/16W" H 6710 4750 50  0000 L CNN "Wattage"
-F 7 "" H 6940 5220 60  0001 C CNN "Digi-Key PN"
+F 7 "541-1.00KLCT-ND" H 6940 5220 60  0001 C CNN "Digi-Key PN"
 	1    6640 4820
 	1    0    0    -1  
 $EndComp
@@ -437,9 +437,9 @@ U 1 1 5BB0BDEE
 P 8190 3090
 F 0 "L1201" V 8040 3115 50  0000 C CNN
 F 1 "600R 0.5A" V 8340 3090 50  0000 C CNN
-F 2 "Inductors_SMD:L_0603" V 8120 3090 50  0001 C CNN
+F 2 "Inductors_SMD:L_0402" V 8120 3090 50  0001 C CNN
 F 3 "~" H 8190 3090 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Digi-Key PN"
+F 4 "490-5441-1-ND" H 0   0   50  0001 C CNN "Digi-Key PN"
 	1    8190 3090
 	0    1    1    0   
 $EndComp
@@ -522,7 +522,7 @@ F 3 "" H 5580 3290 50  0001 C CNN
 F 4 "0402" V 5877 3290 50  0000 C CNN "display_footprint"
 F 5 "1%" V 5786 3290 50  0000 C CNN "Tolerance"
 F 6 "1/16W" V 5695 3290 50  0000 C CNN "Wattage"
-F 7 "" H 5880 3690 60  0001 C CNN "Digi-Key PN"
+F 7 "541-4082-1-ND" H 5880 3690 60  0001 C CNN "Digi-Key PN"
 	1    5580 3290
 	0    1    -1   0   
 $EndComp
@@ -539,9 +539,9 @@ U 1 1 5BBF2083
 P 6640 5120
 F 0 "D1201" V 6678 5003 50  0000 R CNN
 F 1 "Yellow" V 6587 5003 50  0000 R CNN
-F 2 "LEDs:LED_0603" H 6640 5120 50  0001 C CNN
+F 2 "LEDs:LED_0402" H 6640 5120 50  0001 C CNN
 F 3 "~" H 6640 5120 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Digi-Key PN"
+F 4 "1497-1389-1-ND" H 0   0   50  0001 C CNN "Digi-Key PN"
 	1    6640 5120
 	0    -1   -1   0   
 $EndComp
@@ -563,9 +563,9 @@ U 1 1 5BBF2600
 P 9530 3760
 F 0 "L1202" V 9380 3785 50  0000 C CNN
 F 1 "600R 0.5A" V 9680 3760 50  0000 C CNN
-F 2 "Inductors_SMD:L_0603" V 9460 3760 50  0001 C CNN
+F 2 "Inductors_SMD:L_0402" V 9460 3760 50  0001 C CNN
 F 3 "~" H 9530 3760 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Digi-Key PN"
+F 4 "490-5441-1-ND" H 0   0   50  0001 C CNN "Digi-Key PN"
 	1    9530 3760
 	0    1    1    0   
 $EndComp
@@ -629,7 +629,7 @@ F 3 "" H 1840 6830 50  0001 C CNN
 F 4 "0402" H 1940 6920 50  0000 L CNN "display_footprint"
 F 5 "1%" H 1940 6830 50  0000 L CNN "Tolerance"
 F 6 "1/16W" H 1950 6750 50  0000 L CNN "Wattage"
-F 7 "" H 2140 7230 60  0001 C CNN "Digi-Key PN"
+F 7 "541-4067-1-ND" H 2140 7230 60  0001 C CNN "Digi-Key PN"
 	1    1840 6830
 	1    0    0    -1  
 $EndComp
@@ -644,7 +644,7 @@ F 3 "" H 1840 7320 50  0001 C CNN
 F 4 "0402" H 1940 7410 50  0000 L CNN "display_footprint"
 F 5 "1%" H 1940 7320 50  0000 L CNN "Tolerance"
 F 6 "1/16W" H 1950 7240 50  0000 L CNN "Wattage"
-F 7 "" H 2140 7720 60  0001 C CNN "Digi-Key PN"
+F 7 "541-4097-1-ND" H 2140 7720 60  0001 C CNN "Digi-Key PN"
 	1    1840 7320
 	1    0    0    -1  
 $EndComp
@@ -659,7 +659,7 @@ F 3 "" H 1840 6290 50  0001 C CNN
 F 4 "0402" H 1940 6380 50  0000 L CNN "display_footprint"
 F 5 "1%" H 1940 6290 50  0000 L CNN "Tolerance"
 F 6 "1/16W" H 1950 6210 50  0000 L CNN "Wattage"
-F 7 "" H 2140 6690 60  0001 C CNN "Digi-Key PN"
+F 7 "RMCF0402FT487KCT-ND" H 2140 6690 60  0001 C CNN "Digi-Key PN"
 	1    1840 6290
 	1    0    0    -1  
 $EndComp
@@ -710,7 +710,7 @@ F 3 "" H 3470 6240 50  0001 C CNN
 F 4 "0402" H 3570 6330 50  0000 L CNN "display_footprint"
 F 5 "1%" H 3570 6240 50  0000 L CNN "Tolerance"
 F 6 "1/16W" H 3580 6160 50  0000 L CNN "Wattage"
-F 7 "" H 3770 6640 60  0001 C CNN "Digi-Key PN"
+F 7 "RMCF0402FT10K0CT-ND" H 3770 6640 60  0001 C CNN "Digi-Key PN"
 	1    3470 6240
 	1    0    0    -1  
 $EndComp
@@ -771,7 +771,7 @@ F 0 "C1203" H 3565 7650 50  0000 L CNN
 F 1 "0.1uF" H 3565 7450 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 3578 7400 50  0001 C CNN
 F 3 "" H 3565 7650 50  0001 C CNN
-F 4 "" H 3965 8050 60  0001 C CNN "Digi-Key PN"
+F 4 "490-10701-1-ND" H 3965 8050 60  0001 C CNN "Digi-Key PN"
 F 5 "0402" H 3390 7650 50  0000 R CNN "display_footprint"
 F 6 "50V" H 3390 7550 50  0000 R CNN "Voltage"
 F 7 "X7R" H 3390 7450 50  0000 R CNN "Dielectric"
@@ -813,7 +813,7 @@ F 3 "" H 5580 3390 50  0001 C CNN
 F 4 "0402" V 5877 3390 50  0000 C CNN "display_footprint"
 F 5 "1%" V 5786 3390 50  0000 C CNN "Tolerance"
 F 6 "1/16W" V 5695 3390 50  0000 C CNN "Wattage"
-F 7 "" H 5880 3790 60  0001 C CNN "Digi-Key PN"
+F 7 "541-4082-1-ND" H 5880 3790 60  0001 C CNN "Digi-Key PN"
 	1    5580 3390
 	0    1    1    0   
 $EndComp

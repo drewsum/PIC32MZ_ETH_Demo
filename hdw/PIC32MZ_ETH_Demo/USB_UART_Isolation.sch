@@ -86,7 +86,7 @@ F 3 "" H 3460 2650 50  0001 C CNN
 F 4 "0402" H 3650 2730 50  0000 C CNN "display_footprint"
 F 5 "1%" H 3640 2650 50  0000 C CNN "Tolerance"
 F 6 "1/16W" H 3670 2580 50  0000 C CNN "Wattage"
-F 7 "" H 3760 3050 60  0001 C CNN "Digi-Key PN"
+F 7 "RMCF0402FT10K0CT-ND" H 3760 3050 60  0001 C CNN "Digi-Key PN"
 	1    3460 2650
 	-1   0    0    -1  
 $EndComp
@@ -105,7 +105,7 @@ F 3 "" H 4130 2650 50  0001 C CNN
 F 4 "0402" H 4320 2730 50  0000 C CNN "display_footprint"
 F 5 "1%" H 4310 2650 50  0000 C CNN "Tolerance"
 F 6 "1/16W" H 4340 2580 50  0000 C CNN "Wattage"
-F 7 "" H 4430 3050 60  0001 C CNN "Digi-Key PN"
+F 7 "RMCF0402FT10K0CT-ND" H 4430 3050 60  0001 C CNN "Digi-Key PN"
 	1    4130 2650
 	-1   0    0    -1  
 $EndComp
@@ -124,7 +124,7 @@ F 3 "" H 6910 2550 50  0001 C CNN
 F 4 "0402" H 7100 2630 50  0000 C CNN "display_footprint"
 F 5 "1%" H 7090 2550 50  0000 C CNN "Tolerance"
 F 6 "1/16W" H 7120 2480 50  0000 C CNN "Wattage"
-F 7 "" H 7210 2950 60  0001 C CNN "Digi-Key PN"
+F 7 "RMCF0402FT10K0CT-ND" H 7210 2950 60  0001 C CNN "Digi-Key PN"
 	1    6910 2550
 	-1   0    0    -1  
 $EndComp
@@ -143,7 +143,7 @@ F 3 "" H 7600 2550 50  0001 C CNN
 F 4 "0402" H 7790 2630 50  0000 C CNN "display_footprint"
 F 5 "1%" H 7780 2550 50  0000 C CNN "Tolerance"
 F 6 "1/16W" H 7810 2480 50  0000 C CNN "Wattage"
-F 7 "" H 7900 2950 60  0001 C CNN "Digi-Key PN"
+F 7 "RMCF0402FT10K0CT-ND" H 7900 2950 60  0001 C CNN "Digi-Key PN"
 	1    7600 2550
 	-1   0    0    -1  
 $EndComp
@@ -158,7 +158,7 @@ F 3 "" H 4475 4320 50  0001 C CNN
 F 4 "0402" H 4300 4320 50  0000 R CNN "display_footprint"
 F 5 "50V" H 4300 4220 50  0000 R CNN "Voltage"
 F 6 "X7R" H 4300 4120 50  0000 R CNN "Dielectric"
-F 7 "" H 4875 4720 60  0001 C CNN "Digi-Key PN"
+F 7 "490-10701-1-ND" H 4875 4720 60  0001 C CNN "Digi-Key PN"
 	1    4450 4220
 	1    0    0    -1  
 $EndComp
@@ -173,7 +173,7 @@ F 3 "" H 6625 4320 50  0001 C CNN
 F 4 "0402" H 6450 4320 50  0000 R CNN "display_footprint"
 F 5 "50V" H 6450 4220 50  0000 R CNN "Voltage"
 F 6 "X7R" H 6450 4120 50  0000 R CNN "Dielectric"
-F 7 "" H 7025 4720 60  0001 C CNN "Digi-Key PN"
+F 7 "490-10701-1-ND" H 7025 4720 60  0001 C CNN "Digi-Key PN"
 	1    6600 4220
 	1    0    0    -1  
 $EndComp

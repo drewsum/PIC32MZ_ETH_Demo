@@ -834,52 +834,6 @@ F 4 "296-51696-1-ND" H 2790 6840 50  0001 C CNN "Digi-Key PN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Custom_Library:TP TP?
-U 1 1 5E3059D8
-P 4520 2150
-AR Path="/5A557C58/5E3059D8" Ref="TP?"  Part="1" 
-AR Path="/5A0BC776/5E3059D8" Ref="TP?"  Part="1" 
-AR Path="/5CAD2D97/5E3059D8" Ref="TP?"  Part="1" 
-AR Path="/5E6979AC/5E3059D8" Ref="TP1201"  Part="1" 
-F 0 "TP1201" H 4520 2300 50  0000 C CNN
-F 1 "TP" H 4520 2300 50  0001 C CNN
-F 2 "Custom Footprints Library:Test_Point" H 4520 2150 60  0001 C CNN
-F 3 "" H 4520 2150 60  0000 C CNN
-	1    4520 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4520 2150 4520 2220
-Wire Wire Line
-	4520 2220 4830 2220
-$Comp
-L Custom_Library:TP TP?
-U 1 1 5E30EC63
-P 8150 3870
-AR Path="/5C1D5CD8/5E30EC63" Ref="TP?"  Part="1" 
-AR Path="/5C1D5C9E/5E30EC63" Ref="TP?"  Part="1" 
-AR Path="/5CB6F1ED/5E30EC63" Ref="TP?"  Part="1" 
-AR Path="/5CAD2D97/5E30EC63" Ref="TP?"  Part="1" 
-AR Path="/5E6979AC/5E30EC63" Ref="TP1202"  Part="1" 
-F 0 "TP1202" H 8150 4020 50  0000 C CNN
-F 1 "TP" H 8150 4020 50  0001 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x01_Pitch2.54mm" H 8150 3870 60  0001 C CNN
-F 3 "" H 8150 3870 60  0000 C CNN
-	1    8150 3870
-	1    0    0    -1  
-$EndComp
-$Comp
-L Custom_Library:GND_USB #PWR01228
-U 1 1 5E30F7F2
-P 8150 3870
-F 0 "#PWR01228" H 8150 3620 50  0001 C CNN
-F 1 "GND_USB" H 8150 3720 50  0000 C CNN
-F 2 "" H 8150 3870 50  0001 C CNN
-F 3 "" H 8150 3870 50  0001 C CNN
-	1    8150 3870
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG01201
 U 1 1 5E475BF2
 P 4050 2150
@@ -893,11 +847,10 @@ $EndComp
 Wire Wire Line
 	4050 2150 4050 2220
 Wire Wire Line
-	4050 2220 4520 2220
-Connection ~ 4520 2220
-Wire Wire Line
 	7900 2300 7900 2220
 Connection ~ 7900 2220
 Wire Wire Line
 	6180 2220 4830 2220
+Wire Wire Line
+	4050 2220 4830 2220
 $EndSCHEMATC

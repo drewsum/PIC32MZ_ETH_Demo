@@ -203,29 +203,28 @@ Text GLabel 7460 3910 2    50   Output ~ 0
 ETH_RMII_TXD1
 Text GLabel 7460 4010 2    50   Output ~ 0
 ETH_RMII_TXD0
-Text GLabel 3460 3960 0    50   Output ~ 0
+Text GLabel 7460 1610 2    50   Output ~ 0
 ETH_PHY_CLKIN_EN
-Text GLabel 3460 4060 0    50   Output ~ 0
+Text GLabel 3460 1510 0    50   Output ~ 0
 ETH_PHY_RESET
-Text GLabel 3460 1410 0    40   Input ~ 0
+Text GLabel 3460 4060 0    40   Input ~ 0
 ~GPIO_SW
-Text GLabel 3460 1210 0    50   Output ~ 0
+Text GLabel 7460 4510 2    50   Output ~ 0
 GPIO_LED_1
-Text GLabel 3460 1310 0    50   Output ~ 0
+Text GLabel 7460 4110 2    50   Output ~ 0
 GPIO_LED_2
-Text GLabel 7460 2710 2    50   Output ~ 0
+Text GLabel 7460 5310 2    50   Output ~ 0
 Heartbeat_LED
-Text GLabel 7460 2810 2    50   Output ~ 0
+Text GLabel 7460 5210 2    50   Output ~ 0
 Reset_LED
-Text GLabel 7460 2910 2    50   Output ~ 0
+Text GLabel 3460 4510 0    50   Output ~ 0
 USB_Error_LED
-Text GLabel 7460 3010 2    50   Output ~ 0
+Text GLabel 3460 4310 0    50   Output ~ 0
 ETH_Error_LED
-Text GLabel 7460 3210 2    50   Output ~ 0
+Text GLabel 3460 4410 0    50   Output ~ 0
 Other_Error_LED
-Text GLabel 7460 3110 2    50   Output ~ 0
+Text GLabel 3460 4610 0    50   Output ~ 0
 CPU_Exception_LED
-NoConn ~ 3460 1510
 NoConn ~ 3460 1610
 NoConn ~ 3460 1710
 NoConn ~ 3460 1810
@@ -243,14 +242,9 @@ NoConn ~ 3460 3060
 NoConn ~ 3460 3360
 NoConn ~ 3460 3460
 NoConn ~ 3460 3560
-NoConn ~ 3460 4310
-NoConn ~ 3460 4410
-NoConn ~ 3460 4510
-NoConn ~ 3460 4610
 NoConn ~ 3460 4810
 NoConn ~ 7460 1310
 NoConn ~ 7460 1510
-NoConn ~ 7460 1610
 NoConn ~ 7460 1710
 NoConn ~ 7460 1810
 NoConn ~ 7460 1910
@@ -260,18 +254,24 @@ NoConn ~ 7460 3310
 NoConn ~ 7460 3410
 NoConn ~ 7460 3510
 NoConn ~ 7460 3610
-NoConn ~ 7460 4110
 NoConn ~ 7460 4310
 NoConn ~ 7460 4410
-NoConn ~ 7460 4510
 NoConn ~ 7460 4610
 NoConn ~ 7460 4710
 NoConn ~ 7460 5010
 NoConn ~ 7460 5110
-NoConn ~ 7460 5210
-NoConn ~ 7460 5310
 NoConn ~ 7460 5610
 NoConn ~ 7460 5710
 NoConn ~ 7460 5810
 NoConn ~ 7460 5910
+NoConn ~ 7460 2710
+NoConn ~ 7460 2810
+NoConn ~ 7460 2910
+NoConn ~ 7460 3010
+NoConn ~ 7460 3110
+NoConn ~ 7460 3210
+NoConn ~ 3460 3960
+NoConn ~ 3460 1210
+NoConn ~ 3460 1310
+NoConn ~ 3460 1410
 $EndSCHEMATC

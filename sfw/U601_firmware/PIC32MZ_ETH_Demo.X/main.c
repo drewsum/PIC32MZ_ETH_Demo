@@ -21,6 +21,7 @@
 
 // Application
 #include "pin_macros.h"
+#include "gpio_setup.h"
 
 void main(void) {
     
@@ -33,6 +34,9 @@ void main(void) {
     
     // enable global interrupts
     enableGlobalInterrupts();
+    
+    // disable reset LED
+    RESET_LED_PIN = LOW;
     
     // Main loop, do this stuff forever and ever and never get tired of it
     while (1) {

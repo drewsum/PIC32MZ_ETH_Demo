@@ -12,30 +12,30 @@
 // signal names from the hardware schematic
 
 // Port A
-#define GPIO_LED_1_PIN          LATAbits.LATA0
-#define GPIO_LED_2_PIN          LATAbits.LATA1
-#define nGPIO_SW_PIN            PORTAbits.RA2
+#define ETH_PHY_RESET_PIN       LATAbits.LATS3
 
 // Port B
-
+#define nGPIO_SW_PIN            PORTBbits.RB15
 
 // Port C
+#define ETH_ERROR_LED_PIN       LATCbits.LATC1
+#define OTHER_ERROR_LED_PIN     LATCbits.LATC2
+#define USB_ERROR_LED_PIN       LATCbits.LATC3
+#define CPU_EXCEPTION_LED_PIN   LATCbits.LATC4
 #define MCU_POSC_ENABLE_PIN     LATCbits.LATC15
 
 // Port D
 
 // Port E
-#define HEARTBEAT_LED_PIN       LATEbits.LATE0
-#define RESET_LED_PIN           LATEbits.LATE1
-#define USB_ERROR_LED_PIN       LATEbits.LATE2
-#define ETH_ERROR_LED_PIN       LATEbits.LATE3
-#define CPU_EXCEPTION_LED_PIN   LATEbits.LATE4
-#define OTHER_ERROR_LED_PIN     LATEbits.LATE5
-
 
 // Port F
+#define GPIO_LED_2_PIN          LATFbits.LATF2
+#define GPIO_LED_1_PIN          LATFbits.LATF8
 
 // Port G
+#define RESET_LED_PIN           LATGbits.LATG6
+#define HEARTBEAT_LED_PIN       LATGbits.LATG7
+
 
 #endif /* _PIN_MACROS_H */
 

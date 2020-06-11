@@ -37,20 +37,24 @@ void portAGPIOInitialize (void) {
     LATAbits.LATA1          = LAT_LOW;
     TRISAbits.TRISA1        = TRIS_OUTPUT;
     
+    
     // RA2
     ODCAbits.ODCA2          = ODC_DISABLE;
     LATAbits.LATA2          = LAT_LOW;
-    TRISAbits.TRISA2        = TRIS_INPUT;
+    TRISAbits.TRISA2        = TRIS_OUTPUT;
+    
     
     // RA3
-    ODCAbits.ODCA3          = ODC_DISABLE;
+    ODCAbits.ODCA3         = ODC_DISABLE;
     LATAbits.LATA3          = LAT_LOW;
     TRISAbits.TRISA3        = TRIS_OUTPUT;
+    
     
     // RA4
     ODCAbits.ODCA4          = ODC_DISABLE;
     LATAbits.LATA4          = LAT_LOW;
     TRISAbits.TRISA4        = TRIS_OUTPUT;
+    
     
     // RA5
     ANSELAbits.ANSA5        = ANALOG_DISABLE;
@@ -58,10 +62,12 @@ void portAGPIOInitialize (void) {
     LATAbits.LATA5          = LAT_LOW;
     TRISAbits.TRISA5        = TRIS_OUTPUT;
     
+    
     // RA6
     ODCAbits.ODCA6          = ODC_DISABLE;
     LATAbits.LATA6          = LAT_LOW;
     TRISAbits.TRISA6        = TRIS_OUTPUT;
+    
     
     // RA7
     ODCAbits.ODCA7          = ODC_DISABLE;
@@ -73,6 +79,7 @@ void portAGPIOInitialize (void) {
     ODCAbits.ODCA9          = ODC_DISABLE;
     LATAbits.LATA9          = LAT_LOW;
     TRISAbits.TRISA9        = TRIS_OUTPUT;
+    
     
     // RA10
     ANSELAbits.ANSA10       = ANALOG_DISABLE;
@@ -189,7 +196,7 @@ void portBGPIOInitialize (void) {
     ANSELBbits.ANSB15       = ANALOG_DISABLE;
     ODCBbits.ODCB15         = ODC_DISABLE;
     LATBbits.LATB15         = LAT_LOW;
-    TRISBbits.TRISB15       = TRIS_OUTPUT;
+    TRISBbits.TRISB15       = TRIS_INPUT;
     
 }
 
@@ -258,7 +265,7 @@ void portDGPIOInitialize (void) {
     // RD2
     ODCDbits.ODCD2          = ODC_DISABLE;
     LATDbits.LATD2          = LAT_LOW;
-    TRISDbits.TRISD2        = TRIS_INPUT;
+    TRISDbits.TRISD2        = TRIS_OUTPUT;
     
     // RD3
     ODCDbits.ODCD3          = ODC_DISABLE;
@@ -305,12 +312,14 @@ void portDGPIOInitialize (void) {
     ODCDbits.ODCD14         = ODC_DISABLE;
     LATDbits.LATD14         = LAT_LOW;
     TRISDbits.TRISD14       = TRIS_OUTPUT;
+    RPD14Rbits.RPD14R       = 0b0001;               // Assign U3TX to RD14
     
     // RD15
     ANSELDbits.ANSD15       = ANALOG_DISABLE;
     ODCDbits.ODCD15         = ODC_DISABLE;
     LATDbits.LATD15         = LAT_LOW;
     TRISDbits.TRISD15       = TRIS_INPUT;
+    U3RXRbits.U3RXR         = 0b1011;               // Assign U3RX to RD15
     
 }
 
@@ -378,48 +387,48 @@ void portEGPIOInitialize (void) {
 // initializes port F GPIO pins
 void portFGPIOInitialize (void) {
     
-    // Rf0
+    // RF0
     ODCFbits.ODCF0          = ODC_DISABLE;
     LATFbits.LATF0          = LAT_LOW;
     TRISFbits.TRISF0        = TRIS_OUTPUT;
     
-    // Rf1
+    // RF1
     ODCFbits.ODCF1          = ODC_DISABLE;
     LATFbits.LATF1          = LAT_LOW;
     TRISFbits.TRISF1        = TRIS_OUTPUT;
     
-    // Rf2
+    // RF2
     ODCFbits.ODCF2          = ODC_DISABLE;
     LATFbits.LATF2          = LAT_LOW;
     TRISFbits.TRISF2        = TRIS_OUTPUT;
     
-    // Rf3
+    // RF3
     ODCFbits.ODCF3          = ODC_DISABLE;
     LATFbits.LATF3          = LAT_LOW;
     TRISFbits.TRISF3        = TRIS_OUTPUT;
     
-    // Rf4
+    // RF4
     ODCFbits.ODCF4          = ODC_DISABLE;
     LATFbits.LATF4          = LAT_LOW;
     TRISFbits.TRISF4        = TRIS_OUTPUT;
     
-    // Rf5
+    // RF5
     ODCFbits.ODCF5          = ODC_DISABLE;
     LATFbits.LATF5          = LAT_LOW;
     TRISFbits.TRISF5        = TRIS_OUTPUT;
     
-    // Rf8
+    // RF8
     ODCFbits.ODCF8          = ODC_DISABLE;
     LATFbits.LATF8          = LAT_LOW;
     TRISFbits.TRISF8        = TRIS_OUTPUT;
     
-    // Rf12
+    // RF12
     ANSELFbits.ANSF12       = ANALOG_DISABLE;
     ODCFbits.ODCF12         = ODC_DISABLE;
     LATFbits.LATF12         = LAT_LOW;
     TRISFbits.TRISF12       = TRIS_OUTPUT;
     
-    // Rf13
+    // RF13
     ANSELFbits.ANSF13       = ANALOG_DISABLE;
     ODCFbits.ODCF13         = ODC_DISABLE;
     LATFbits.LATF13         = LAT_LOW;

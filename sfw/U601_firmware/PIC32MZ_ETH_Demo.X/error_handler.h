@@ -59,7 +59,7 @@ volatile __attribute__((coherent))  uint8_t update_error_leds_flag;
     
 // this array holds the names of error handler flags
 const char *  error_handler_flag_names[] = {
- 
+
     "Configuration",
     "USB General",
     "USB Framing",
@@ -70,36 +70,10 @@ const char *  error_handler_flag_names[] = {
     "Deadman Timer",
     "System Bus Protection Violation",
     "Prefetch Module SEC",
-    "ADC Configuration",
-    "ADC Reference",
     "Clock Failure",
     "Watchdog Timer Timeout",
     "Deadman Timer Timeout",
-    "MCU VDD Brownout",
-    "I2C Stall",
-    "I2C Bus Collision",
-    "+12V Temperature Sensor",
-    "+3.3V Temperature Sensor",
-    "+5V Temperature Sensor",
-    "+1.2VFF Temperature Sensor",
-    "+60VAN Temperature Sensor",
-    "Ambient Temperature Sensor",
-    "USB Temperature Sensor",
-    "Display Board Temperature Sensor",
-    "+12V Power Monitor",
-    "+3.3V Input Power Monitor",
-    "+3.3V Output Power Monitor",
-    "+5V Input Power Monitor",
-    "+5V Output Power Monitor",
-    "+1.2VFF Input Power Monitor",
-    "+1.2VFF Output Power Monitor",
-    "+60VAN Input Power Monitor",
-    "+60VAN Output Power Monitor",
-    "USB Power Monitor",
-    "Logic Board time of Flight Counter",
-    "Backup RTC",
-    "Display IO Expander",
-    "Display Board time of Flight Counter"
+    "MCU VDD Brownout"
     
 };
 

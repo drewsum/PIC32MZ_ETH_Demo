@@ -29,6 +29,10 @@
 
 void main(void) {
 
+    // Save the cause of the most recent device reset
+    // This also checks for configuration errors
+    reset_cause = getResetCause();
+    
     // Clear the terminal
     terminalClearScreen();
     terminalSetCursorHome();
@@ -39,6 +43,39 @@ void main(void) {
     printf("PIC32MZ ETH Demo\r\n");
     printf("Created by Drew Maatman, 2020\r\n");
     terminalTextAttributesReset();
+    
+    // Print cause of reset
+    if (    reset_cause == Undefined ||
+            reset_cause == Primary_Config_Registers_Error ||
+            reset_cause == Primary_Secondary_Config_Registers_Error ||
+            reset_cause == Config_Mismatch ||
+            reset_cause == DMT_Reset ||
+            reset_cause == WDT_Reset ||
+            reset_cause == Software_Reset ||
+            reset_cause == External_Reset ||
+            reset_cause == BOR_Reset) {
+    
+        terminalTextAttributes(RED_COLOR, BLACK_COLOR, NORMAL_FONT);
+        
+    }
+    
+    else {
+     
+        terminalTextAttributes(GREEN_COLOR, BLACK_COLOR, NORMAL_FONT);
+        
+    }
+    
+    // only clear persistent error flags if we've seen a POR... keep old values after other resets
+    if (reset_cause == POR_Reset) {
+        clearErrorHandler();
+    }
+    
+    printf("\r\nCause of most recent device reset: %s\r\n\r\n", getResetCauseString(reset_cause));
+    terminalTextAttributesReset();
+    
+    terminalTextAttributes(GREEN_COLOR, BLACK_COLOR, BOLD_FONT);
+    printf("Beginning Host Initialization:\r\n");
+    terminalTextAttributes(GREEN_COLOR, BLACK_COLOR, NORMAL_FONT);
     
     // setup GPIO pins
     gpioInitialize();
@@ -70,6 +107,13 @@ void main(void) {
     
     // disable reset LED
     RESET_LED_PIN = LOW;
+    printf("    Reset LED Disabled\r\n");
+    
+    // Print end of boot message, reset terminal for user input
+    terminalTextAttributesReset();
+    terminalTextAttributes(YELLOW_COLOR, BLACK_COLOR, NORMAL_FONT);
+    printf("\n\rType 'Help' for list of supported commands\n\r\n\r");
+    terminalTextAttributesReset();
     
     // Main loop, do this stuff forever and ever and never get tired of it
     while (1) {
@@ -78,6 +122,19 @@ void main(void) {
         if (wdt_clear_request) {
             kickTheDog();
             wdt_clear_request = 0;
+        }
+        
+        // parse received USB strings if we have a new one received
+        if (usb_uart_rx_ready) {
+            usbUartRxLUTInterface(usb_uart_rx_buffer);
+            // Determine length of received string
+            uint32_t length = strlen(usb_uart_rx_buffer);
+        
+            // clear rx buffer
+            uint32_t index;
+            for (index = 0; index < length; index++) {
+                usb_uart_rx_buffer[index] = '\0';
+            }
         }
         
         // update error LEDs if needed

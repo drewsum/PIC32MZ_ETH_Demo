@@ -17,6 +17,7 @@
 #include "device_control.h"
 #include "heartbeat_timer.h"
 #include "cause_of_reset.h"
+#include "prefetch.h"
 
 // USB
 #include "terminal_control.h"
@@ -26,6 +27,7 @@
 #include "pin_macros.h"
 #include "gpio_setup.h"
 #include "error_handler.h"
+#include "power_saving.h"
 
 void main(void) {
 
@@ -93,6 +95,14 @@ void main(void) {
     
     // enable global interrupts
     enableGlobalInterrupts();
+    
+    // Setup prefetch module
+    prefetchInitialize();
+    printf("    CPU Instruction Prefetch Module Enabled\r\n");
+    
+    // Disable unused peripherals for power savings
+    PMDInitialize();
+    printf("    Unused Peripheral Modules Disabled\n\r");
     
     heartbeatTimerInitialize();
     printf("    Heartbeat Timer Initialized\n\r");

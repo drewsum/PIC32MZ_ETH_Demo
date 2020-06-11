@@ -62,7 +62,7 @@ usb_uart_command_function_t clearCommand(char * input_str) {
 usb_uart_command_function_t idnCommand(char * input_str) {
     terminalTextAttributesReset();
     terminalTextAttributes(GREEN_COLOR, BLACK_COLOR, NORMAL_FONT);
-    printf("VFD Clock by Drew Maatman, 2020\r\n");
+    printf("PIC32MZ Ethernet Demo Board by Drew Maatman, 2020\r\n");
     terminalTextAttributesReset();    
 }
 
@@ -98,7 +98,7 @@ usb_uart_command_function_t hostStatusCommand(char * input_str) {
     
     printWatchdogStatus();
     printDeadmanStatus();
-    // printPrefetchStatus();
+    printPrefetchStatus();
     
     // Print cause of reset
     if (    reset_cause == Undefined ||
@@ -145,40 +145,18 @@ usb_uart_command_function_t peripheralStatusCommand(char * input_str) {
     else if (strcmp(rx_peripheral_name, "Clocks") == 0) {
         printClockStatus(SYSCLK_INT);
     }
-//    else if (strcmp(rx_peripheral_name, "PMD") == 0) {
-//        printPMDStatus();
-//    }
+    else if (strcmp(rx_peripheral_name, "PMD") == 0) {
+        printPMDStatus();
+    }
     else if (strcmp(rx_peripheral_name, "WDT") == 0) {
         printWatchdogStatus();
     }
     else if (strcmp(rx_peripheral_name, "DMT") == 0) {
         printDeadmanStatus();
     }
-//    else if (strcmp(rx_peripheral_name, "Prefetch") == 0) {
-//        printPrefetchStatus();
-//    }
-//    else if (strcmp(rx_peripheral_name, "ADC Channels") == 0) {
-//        printADCChannelStatus();
-//    }
-//    else if (strcmp(rx_peripheral_name, "ADC") == 0) {
-//        printADCStatus();
-//    }
-//    else if (strcmp(rx_peripheral_name, "I2C Master") == 0) {    
-//        terminalTextAttributes(GREEN_COLOR, BLACK_COLOR, BOLD_FONT);
-//        printf("I2C Bus Master Controller Status:\r\n");
-//        printI2CMasterStatus();
-//    }
-//    else if (strcmp(rx_peripheral_name, "I2C Slaves") == 0) {    
-//        terminalTextAttributes(GREEN_COLOR, BLACK_COLOR, REVERSE_FONT);
-//        printf("I2C Bus Slave Device Status:\r\n");
-//        terminalTextAttributesReset();
-//        printTemperatureSensorStatus();
-//        printPowerMonitorStatus();
-//        miscI2CDevicesPrintStatus();
-//    }
-//    else if (strcmp(rx_peripheral_name, "RTCC") == 0) {
-//        printRTCCStatus();
-//    }
+    else if (strcmp(rx_peripheral_name, "Prefetch") == 0) {
+        printPrefetchStatus();
+    }
     else if (strcomp(rx_peripheral_name, "Timer ") == 0) {
         uint32_t read_timer_number;
         sscanf(rx_peripheral_name, "Timer %u", &read_timer_number);
@@ -197,10 +175,10 @@ usb_uart_command_function_t peripheralStatusCommand(char * input_str) {
         printf("Peripherals that can be monitored include:\r\n"
                 "   Interrupts\r\n"
                 "   Clocks\r\n"
-    //            "   PMD\r\n"
+                "   PMD\r\n"
                 "   WDT\r\n"
                 "   DMT\r\n"
-    //            "   Prefetch\r\n"
+                "   Prefetch\r\n"
                 "   Timer <x> (x = 1-9)\r\n");
         terminalTextAttributesReset();
         return;
@@ -261,10 +239,10 @@ void usbUartHashTableInitialize(void) {
             "\b\b<peripheral_name>: Prints status about passed peripheral. Available peripherals:\r\n"
             "       Interrupts\r\n"
             "       Clocks\r\n"
-//            "       PMD\r\n"
+            "       PMD\r\n"
             "       WDT\r\n"
             "       DMT\r\n"
-//            "       Prefetch\r\n"
+            "       Prefetch\r\n"
             "       Timer <x> (x = 1-9)",
             peripheralStatusCommand);
     usbUartAddCommand("Error Status?",

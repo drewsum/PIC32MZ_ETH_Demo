@@ -6,9 +6,11 @@ device_control.h  \
 heartbeat_timer.h  \
 pin_macros.h  \
  cause_of_reset.h  \
+prefetch.h  \
 terminal_control.h  \
 usb_uart.h  \
  usb_uart_rx_lookup_table.h  \
 uthash.h  \
 gpio_setup.h  \
-error_handler.h 
+error_handler.h  \
+ power_saving.h 
